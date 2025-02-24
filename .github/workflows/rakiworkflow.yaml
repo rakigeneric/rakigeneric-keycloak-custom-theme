@@ -9,8 +9,10 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitHub repository
+      - name: Checkout GitHub repository (Full Clone)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ensures a full clone instead of a shallow one
 
       - name: Mirror to GitLab
         env:
