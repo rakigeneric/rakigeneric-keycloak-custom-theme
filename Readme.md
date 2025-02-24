@@ -39,7 +39,6 @@ These `spi*` settings enable hot reload during development. In production, you c
 
 Once Keycloak is running, log in and change the login theme under the realm settings.
 
-
 ## Extend account page 
 
 Reference 
